@@ -27,7 +27,7 @@ TOP_VIEWPORT_MARGIN = 250
 
 class MyGame(arcade.Window):
     """
-    Main app class
+    Main awesome app class
     """
 
     def __init__(self):
