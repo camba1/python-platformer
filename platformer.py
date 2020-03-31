@@ -228,7 +228,11 @@ class MyGame(arcade.Window):
         # Check if user beat level
         if self.player_sprite.center_x > self.end_of_map:
             # Advance to next map
-            self.level += 1
+            if  self.level == 1:
+                self.level += 1
+            else:
+                self.level = 1
+
             self.setup(self.level)
             self.view_left = 0
             self.view_bottom = 0
